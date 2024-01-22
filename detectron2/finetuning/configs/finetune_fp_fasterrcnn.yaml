@@ -1,0 +1,32 @@
+_BASE_: "Base-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  ANCHOR_GENERATOR:
+    ASPECT_RATIOS: [ [ 0.2, 0.9, 1.4, 4 ] ]
+    SIZES: [ [ 16, 64, 128, 256, 512 ] ]
+  BACKBONE:
+    FREEZE_AT: 0
+  RESNETS:
+    NORM: "BN"
+  FPN:
+   NORM: "BN"
+  ROI_BOX_HEAD:
+    NORM: "BN"
+TEST:
+  EVAL_PERIOD: 500
+  PRECISE_BN:
+    ENABLED: True
+SOLVER:
+  AMP:
+    ENABLED: True
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.02
+  MAX_ITER: 2700
+  STEPS: [1620, 2160]
+DATASETS:
+  TRAIN: ("FP_train",)
+  TEST: ("FP_val",)
+DATALOADER:
+  NUM_WORKERS: 2
+VIS_PERIOD: 0
+SEED: 42

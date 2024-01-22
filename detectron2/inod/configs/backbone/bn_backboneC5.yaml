@@ -1,0 +1,6 @@
+VERSION: 2
+_BASE_: "standard_backboneC5.yaml"
+MODEL:
+    RESNETS:
+        # Options: FrozenBN, GN, "SyncBN", "BN"
+        NORM: "BN"

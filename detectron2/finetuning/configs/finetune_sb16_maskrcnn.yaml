@@ -1,0 +1,5 @@
+_BASE_: "finetune_sb16_fasterrcnn.yaml"
+MODEL:
+  MASK_ON: True
+  ROI_MASK_HEAD:
+    NORM: "BN"

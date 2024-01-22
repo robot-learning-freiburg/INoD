@@ -1,0 +1,7 @@
+_BASE_: "pretrain_sb16_fasterrcnn.yaml"
+SOLVER:
+  MAX_ITER: 11800
+  STEPS: [7080, 9440]
+DATASETS:
+  TRAIN: ("FP_train",)
+  TEST: ("FP_val",)

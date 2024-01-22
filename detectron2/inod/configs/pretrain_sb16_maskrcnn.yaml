@@ -1,0 +1,3 @@
+_BASE_: "pretrain_sb16_fasterrcnn.yaml"
+MODEL:
+  MASK_ON: True
