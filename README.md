@@ -10,7 +10,7 @@ The goal of injected feature discrimination is to make the network learn unequiv
 ![INoD](static/noisenet_architecture_website.png)
 
 ## Model Zoo
-Pre-trained models on [SugarBeets 2016](http://inod.cs.uni-freiburg.de/dataset/mask-sb16cp22.pkl) and our [Fraunhofer Potato](http://inod.cs.uni-freiburg.de/dataset/detec-cp22sb16.pkl) dataset  are available for download.
+Pre-trained models on [SugarBeets 2016](http://inod.cs.uni-freiburg.de/dataset/mask-sb16fp.pkl) and our [Fraunhofer Potato](http://inod.cs.uni-freiburg.de/dataset/detec-fpsb16.pkl) dataset  are available for download.
 
 ## System Requirement and Installation
 - Linux (Tested on Ubuntu 20.04)
