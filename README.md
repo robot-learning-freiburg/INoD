@@ -64,7 +64,7 @@ The configuration parameters of the model such as the learning rate, batch size,
 
 Fine-tuning datasets should be in the following format:
 ``` 
-    - ImageSets (specifying path to train val and test images)
+    - ImageSets (specifying path to train, val and test images)
         - train.txt
         - val.txt
         - test.txt
